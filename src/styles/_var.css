@@ -1,0 +1,12 @@
+:root {
+  --btn-light:#3498db;
+  --btn-dark: #e74c3c;
+  --btn-hover-light: #2980b9;
+  --btn-hover-dark: #c0392b;
+  --body-bg-light: #ffffff;
+  --body-bg-dark: #1a1a1a;
+  --text-color-light: #333333; 
+  --text-color-dark: #ffffff;
+  --header-footer-bg-light: #f2f2f2;
+  --header-footer-bg-dark: #333333;
+}

@@ -1,0 +1,44 @@
+.catalogWelcome {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.catalogWelcome h1 {
+  margin-bottom: 20px;
+  color: var(--btn-light); 
+}
+body[data-theme="dark"] .catalogWelcome h1{
+  color: var(--btn-dark);
+}
+.catalogWelcome h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.banner {
+  text-align: center; 
+}
+.banner div>img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.catalogWelcome ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.catalogWelcome ul li::before {
+  content: '✓';
+  color: #28a745;
+  font-weight: bold; 
+  display: inline-block; 
+  width: 20px;
+}
+
+.catalogWelcome p {
+  line-height: 1.6; 
+}
+
+.catalogWelcome button {
+  margin-top: 20px;
+}

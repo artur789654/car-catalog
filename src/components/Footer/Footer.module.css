@@ -1,0 +1,12 @@
+.footerIcon{
+  color: var(--text-color-light);
+}
+.footerIcon:hover {
+  color: var(--btn-light); 
+}
+body[data-theme="dark"] .footerIcon{
+  color: var(--text-color-dark);
+}
+body[data-theme="dark"] .footerIcon:hover{
+  color: var(--btn-dark);
+}

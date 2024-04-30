@@ -1,0 +1,123 @@
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.carwrap {
+  display: grid;
+}
+body[data-theme="dark"] .card {
+  background-color: var(--body-background-dark);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme="dark"] .card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.cardTitle {
+  color: var(--text-color-light);
+}
+
+body[data-theme="dark"] .cardTitle {
+  color: var(--text-color-dark);
+}
+
+.cardText {
+  color: var(--text-color-light);
+}
+
+body[data-theme="dark"] .cardText {
+  color: var(--text-color-dark);
+}
+
+button {
+  background-color: var(--btn-light);
+  color: var(--body-bg-light);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: var(--btn-hover-light);
+}
+body[data-theme="dark"] button {
+  background-color: var(--btn-dark);
+  color: var(--text-color-dark);
+}
+body[data-theme="dark"] button:hover {
+  background-color: var(--btn-hover-dark);
+}
+.seeMoreButton {
+  justify-self: end;
+}
+
+.addbtn {
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+.searchIcon {
+  width: fit-content;
+  padding: 5px;
+}
+.filters {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.filters.show {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+.editIcon,
+.deleteIcon {
+  position: absolute;
+  top: 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.editIcon {
+  right: 10px;
+  padding: 2px 6px;
+  color: var(--text-color-light);
+}
+body[data-theme="dark"] .editIcon {
+  color: var(--text-color-dark);
+}
+.editIcon:hover {
+  color: var(--text-color-dark);
+  background-color: var(--btn-light);
+}
+.deleteIcon {
+  padding: 2px 4px;
+  right: 40px;
+  color: rgb(217, 83, 79);
+}
+.deleteIcon:hover {
+  color: white;
+  background-color: var(--btn-hover-dark);
+}
+.customfocusstyle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+@media (max-width: 768px){
+  .carListActions{
+    flex-direction: column;
+    gap: 15px;
+  }  
+}

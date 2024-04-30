@@ -1,0 +1,21 @@
+.rotatingBackground {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  width: 40%;
+  height: 100%;
+  background-image: url("https://png.pngtree.com/png-vector/20230131/ourmid/pngtree-red-wheel-vector-high-resolution-png-image_6578985.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: spin 20s linear infinite;
+  z-index: -1;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

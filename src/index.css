@@ -1,0 +1,115 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./styles/_var.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-bg-light);
+  color: var(--text-color-light);
+  background-color: var(--body-bg-light);
+  color: var(--text-color-light);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+header,
+footer {
+  background-color: var(--header-footer-bg-light);
+  padding: 20px 0;
+  min-height: 10vh;
+}
+main{
+  min-height: 80vh;
+}
+body[data-theme="dark"] {
+  background-color: var(--body-bg-dark);
+  color: var(--text-color-dark);
+}
+body[data-theme="dark"] header,
+body[data-theme="dark"] footer{
+  background-color: var(--header-footer-bg-dark);
+  color: var(--text-color-dark);
+}
+img {
+  object-fit: contain;
+}
+
+p{
+  margin: 0;
+}
+
+.navbar-light .navbar-nav {
+  color: var(--btn-light) !important;
+}
+body[data-theme="dark"] .navbar-light .navbar-nav {
+  color: var(--btn-dark) !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--btn-hover-light)!important;
+}
+body[data-theme="dark"] .navbar-light .navbar-nav .nav-link:hover {
+  color: var(--btn-hover-dark)!important;
+}
+.nav-link{
+  color: var(--text-color-light);
+  font-weight: 600;
+}
+body[data-theme="dark"] .nav-link{
+  color: var(--text-color-dark);
+}
+.nav-link.active{
+  font-weight: 700;
+  color: var(--btn-light) !important;
+}
+body[data-theme="dark"] .nav-link.active{
+  color: var(--btn-dark) !important;
+}
+.navbar-brand>div{
+  padding: 4px;
+  border-radius: 50%;
+  background-color: var(--body-bg-light);
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type="number"]::-ms-clear,
+input[type="number"]::-ms-reveal {
+  display: none;
+}
+
+.carousel-item img {
+  object-fit: contain;
+}
+
+.carousel-inner{
+  height: 450px;
+}
+
+@media (max-width: 821px){
+  .carousel-inner{
+    height: 300px;
+  }  
+}
+@media (max-width: 576px){
+  .carousel-inner{
+    height: 200px;
+  }  
+}

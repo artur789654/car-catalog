@@ -1,0 +1,31 @@
+@import "../../styles/_var.css";
+
+.navbar-light .navbar-nav .nav-link {
+  --bs-navbar-color: var(--btn-light);
+  --bs-navbar-hover-color: var(--btn-hover-light);
+}
+
+.formcheckinput:checked {
+  background-color: var(--btn-dark); 
+  border-color: var(--btn-dark);
+}
+.formcheckinput:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+body[data-theme="dark"]  .logoColor{
+  color: var(--body-bg-light);
+}
+.navLink {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #0056b3;
+}
+
+.navLinkActive {
+  font-weight: bold; 
+  color: #0056b3;
+}
