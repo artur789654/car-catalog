@@ -191,7 +191,7 @@ export const carList = [
     description:
       "Mercedes-Benz GLC - a compact luxury SUV with a sleek design.",
     photo:
-      "https://65e81151f52e248c552b-fe74cd567ea2f1228f846834bd67571e.ssl.cf1.rackcdn.com/ldm-images/2022-Mercedes-Benz-GLC-color-MANUFAKTUR-Cardinal-Red-metallic.png",
+      "https://vehicle-images.dealerinspire.com/stock-images/chrome/f593d4f5d17189a07338ab4f7e5f96fe.png",
   },
   {
     id: 15,

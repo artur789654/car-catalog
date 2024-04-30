@@ -19,11 +19,11 @@ function SingleCar() {
   return (
     <div className={`container mt-5 `}>
       <div className={styles.rotatingBackground}></div>
-      <div className="row">
+      <div className="row gap-4">
         <div className="col-md-6">
           <img src={car.photo} alt={car.name} className="img-fluid" />
         </div>
-        <div className="col-md-6 d-grid gap-1">
+        <div className="col-md-5 d-grid gap-1">
           <h1>{car.name}</h1>
           <p><strong>Manufacturer:</strong>  <Badge bg="secondary">{car.manufacturer}</Badge></p>
           <p><strong>Year:</strong>  <Badge  bg="secondary">{car.year}</Badge></p>
