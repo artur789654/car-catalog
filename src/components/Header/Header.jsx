@@ -32,11 +32,6 @@ export default function Header({ changeTheme, isDark }) {
                   Catalog
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item>
-                <Nav.Link as={NavLink} to="/contact-us">
-                  Contact Us
-                </Nav.Link>
-              </Nav.Item>
             </Nav>
             <div className={`d-flex align-items-center justify-content-center ${styles.wrapTheme} ms-3`}>
               <FaSun className={`${styles.sunIcon} me-2`} />
