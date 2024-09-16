@@ -14,7 +14,7 @@ Car-catalog is an interactive website for searching and learning about cars. Our
 The project was developed using the following technologies:
 
 - **React.js**: Frontend framework for creating interactive UIs.
-- **Redux**: To manage the state of the application.
+- **Redux Toolkit**: To manage the state of the application.
 - **React Router**: For navigating between pages.
 - **React Bootstrap**: For styling components.
 
